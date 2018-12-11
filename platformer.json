@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.platformer",
-    "projectFile": "/Users/yoann/GDevelop projects/My project/platformer.json",
+    "projectFile": "/Users/yoann/GDevelop projects/RageDream/platformer.json",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -537,6 +537,51 @@
         "kind": "image",
         "metadata": "",
         "name": "../../Downloads/Sprites/marche.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/base.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/base2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/base2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/fusil.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/fusil.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/fusil2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/fusil2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/marche.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/marche.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -4487,8 +4532,8 @@
           "locked": false,
           "name": "Player",
           "width": 0,
-          "x": 344.395,
-          "y": 433.798,
+          "x": 344,
+          "y": 440,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -4525,11 +4570,34 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 1,
+                  "timeBetweenFrames": 10,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "../../Downloads/Sprites/fusil.png",
+                      "image": "Sprites/base.png",
+                      "points": [
+                        {
+                          "name": "GunEnd",
+                          "x": 83.3711,
+                          "y": 53.7031
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 89.7695,
+                        "y": 52.4688
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sprites/base2.png",
                       "points": [
                         {
                           "name": "GunEnd",
@@ -4560,11 +4628,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 1,
+                  "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "../../Downloads/Sprites/fusil.png",
+                      "image": "Sprites/fusil.png",
                       "points": [
                         {
                           "name": "GunEnd",
@@ -4587,7 +4655,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "../../Downloads/Sprites/fusil2.png",
+                      "image": "Sprites/fusil2.png",
                       "points": [
                         {
                           "name": "GunEnd",
@@ -4617,12 +4685,12 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 1,
+                  "looping": true,
+                  "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "../../Downloads/Sprites/base.png",
+                      "image": "Sprites/base.png",
                       "points": [
                         {
                           "name": "GunEnd",
@@ -4645,7 +4713,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "../../Downloads/Sprites/marche.png",
+                      "image": "Sprites/marche.png",
                       "points": [
                         {
                           "name": "GunEnd",
@@ -4762,6 +4830,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -4794,6 +4874,73 @@
               "parameters": [
                 "Player",
                 "\"firerate\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"firerate\"",
+                "0.1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsMoving"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
