@@ -584,6 +584,114 @@
         "name": "Sprites/marche.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/background_city.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/background_city.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Image-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/Image-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/bullet.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Bullet-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/Bullet-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Bullet-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/Bullet-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Bullet-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/Bullet-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/gm-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/gm-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/gm-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/gm-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/GrandmaEnemy-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/GrandmaEnemy-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/GrandmaEnemy-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/GrandmaEnemy-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/background_city_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/background_city_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/Image-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/Image-1-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4515,10 +4623,10 @@
           "height": 32,
           "layer": "",
           "locked": false,
-          "name": "DefaultPlatform",
-          "width": 484,
-          "x": 201.516,
-          "y": 539.705,
+          "name": "Floor",
+          "width": 2776,
+          "x": 0,
+          "y": 567,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -4532,9 +4640,39 @@
           "locked": false,
           "name": "Player",
           "width": 0,
-          "x": 344,
-          "y": 440,
+          "x": 301,
+          "y": 462,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 600,
+          "layer": "",
+          "locked": false,
+          "name": "Background",
+          "width": 6233,
+          "x": 0,
+          "y": 0,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "GrandmaEnemy",
+          "width": 0,
+          "x": 932,
+          "y": 460,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4574,35 +4712,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites/base.png",
-                      "points": [
-                        {
-                          "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 89.7695,
-                        "y": 52.4688
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
                       "image": "Sprites/base2.png",
                       "points": [
                         {
                           "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
+                          "x": 91.1953,
+                          "y": 50.7891
                         }
                       ],
                       "originPoint": {
@@ -4636,8 +4751,8 @@
                       "points": [
                         {
                           "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
+                          "x": 91.1953,
+                          "y": 50.7891
                         }
                       ],
                       "originPoint": {
@@ -4659,8 +4774,8 @@
                       "points": [
                         {
                           "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
+                          "x": 91.1953,
+                          "y": 50.7891
                         }
                       ],
                       "originPoint": {
@@ -4690,12 +4805,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites/base.png",
+                      "image": "Sprites/marche.png",
                       "points": [
                         {
                           "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
+                          "x": 91.1953,
+                          "y": 50.7891
                         }
                       ],
                       "originPoint": {
@@ -4713,12 +4828,12 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Sprites/marche.png",
+                      "image": "Sprites/base2.png",
                       "points": [
                         {
                           "name": "GunEnd",
-                          "x": 83.3711,
-                          "y": 53.7031
+                          "x": 91.1953,
+                          "y": 50.7891
                         }
                       ],
                       "originPoint": {
@@ -4748,7 +4863,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bullet",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -4757,12 +4872,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "slimeDead.png",
+                      "image": "Sprites/Bullet-1-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
-                        "y": 0
+                        "y": 25
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4780,7 +4895,7 @@
         },
         {
           "height": 32,
-          "name": "DefaultPlatform",
+          "name": "Floor",
           "texture": "bridge.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
@@ -4792,6 +4907,75 @@
               "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "height": 32,
+          "name": "Background",
+          "texture": "Sprites/Image-1-0.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "name": "GrandmaEnemy",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "lifePoints",
+              "value": "3"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "GrandmaEnemy",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.4,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sprites/GrandmaEnemy-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Sprites/GrandmaEnemy-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -4842,6 +5026,17 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"fireAnimation\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -4849,7 +5044,7 @@
                 "Bullet",
                 "Player.PointX(GunEnd)",
                 "Player.PointY(GunEnd)",
-                "Player.Y()"
+                ""
               ],
               "subInstructions": []
             },
@@ -4878,13 +5073,59 @@
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"fireAnimation\"",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -4892,22 +5133,135 @@
               },
               "parameters": [
                 "Player",
-                "\"firerate\"",
+                "\"fireAnimation\"",
                 "0.1"
               ],
               "subInstructions": []
             }
           ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"walk\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PlatformBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
+                "value": "CentreCamera"
               },
               "parameters": [
+                "",
                 "Player",
-                "=",
-                "0"
+                "no",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Enemies events",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "GrandmaEnemy",
+                "180",
+                "20",
+                ""
               ],
               "subInstructions": []
             }
@@ -4922,11 +5276,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlatformBehavior::IsMoving"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Player",
-                "PlatformerObject"
+                "Bullet",
+                "GrandmaEnemy",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -4935,20 +5291,73 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
+                "value": "Delete"
               },
               "parameters": [
-                "Player",
-                "=",
-                "2"
+                "Bullet",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "GrandmaEnemy",
+                "lifePoints",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "GrandmaEnemy",
+                    "lifePoints",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "GrandmaEnemy",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "layers": [
+        {
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "name": "",
           "visibility": true,
